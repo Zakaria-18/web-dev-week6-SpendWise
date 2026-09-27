@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise — Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/>
+            <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H5a2 2 0 0 1-2-2Z"/>
+            <circle cx="16.5" cy="14" r="0.75" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <span class="brand-name">SpendWise</span>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link is-active">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+              </svg>
+              <span class="nav-label">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="8" y1="6" x2="21" y2="6"/>
+                <line x1="8" y1="12" x2="21" y2="12"/>
+                <line x1="8" y1="18" x2="21" y2="18"/>
+                <circle cx="3.5" cy="6" r="1.25" fill="currentColor" stroke="none"/>
+                <circle cx="3.5" cy="12" r="1.25" fill="currentColor" stroke="none"/>
+                <circle cx="3.5" cy="18" r="1.25" fill="currentColor" stroke="none"/>
+              </svg>
+              <span class="nav-label">Expenses</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82Z"/>
+                <circle cx="7" cy="7" r="1.25" fill="currentColor" stroke="none"/>
+              </svg>
+              <span class="nav-label">Categories</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="3" y1="21" x2="21" y2="21"/>
+                <rect x="5" y="12" width="3.5" height="6" rx="1"/>
+                <rect x="10.25" y="8" width="3.5" height="10" rx="1"/>
+                <rect x="15.5" y="4" width="3.5" height="14" rx="1"/>
+              </svg>
+              <span class="nav-label">Reports</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+              </svg>
+              <span class="nav-label">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p class="sidebar-footer-text">Dashboard</p>
+      </div>
+    </aside>
+
+    <div class="main-area">
+
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1 class="page-title">Dashboard</h1>
+          <p class="page-subtitle">Welcome back — here's your spending overview.</p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="balance-chip">
+            <span class="balance-label">Remaining</span>
+            <span class="balance-value" id="balance-value">$0.00</span>
+          </div>
+          <div class="avatar" aria-label="User avatar">AK</div>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <section class="add-expense" aria-labelledby="add-heading">
+          <h2 id="add-heading" class="section-title">Add Expense</h2>
+
+          <form id="expense-form" class="expense-form">
+            <div class="form-field">
+              <label for="expense-name">Name</label>
+              <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Groceries" required>
+            </div>
+
+            <div class="form-field">
+              <label for="expense-amount">Amount ($)</label>
+              <input type="number" id="expense-amount" name="expense-amount" placeholder="0.00" step="0.01" min="0" required>
+            </div>
+
+            <div class="form-field">
+              <label for="expense-category">Category</label>
+              <select id="expense-category" name="expense-category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Rent">Rent</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Savings">Savings</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="expense-date">Date</label>
+              <input type="date" id="expense-date" name="expense-date" required>
+            </div>
+
+            <button type="submit" class="btn-add">Add Expense</button>
+          </form>
+        </section>
+
+        <section class="cards-section" aria-labelledby="categories-heading">
+          <h2 id="categories-heading" class="section-title">Categories</h2>
+
+          <div class="state-panel is-empty" id="empty-state" role="status">
+            <div class="state-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7h18l-1.5 12.5a2 2 0 0 1-2 1.5h-11a2 2 0 0 1-2-1.5L3 7Z"/>
+                <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
+              </svg>
+            </div>
+            <p class="state-title">No expenses yet</p>
+            <p class="state-text">Add your first expense above and your category totals will appear here.</p>
+          </div>
+
+          <div class="card-grid" id="card-grid"></div>
+        </section>
+
+        <section class="table-section" aria-labelledby="expenses-heading">
+          <h2 id="expenses-heading" class="section-title">Expense Records</h2>
+
+          <div class="table-wrapper">
+            <table class="expenses-table" id="expenses-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Amount</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th class="col-actions"></th>
+                </tr>
+              </thead>
+              <tbody id="expenses-body">
+                
+              </tbody>
+            </table>
+
+            <p class="table-empty" id="table-empty">No expenses recorded yet.</p>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="page-footer">
+        <p>SpendWise — Dashboard</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
