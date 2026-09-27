@@ -1,4 +1,4 @@
-# SpendWise — Interactive Budget Tracker (Week 7)
+# SpendWise — Interactive Budget Tracker
 
 SpendWise is a personal budget and expense tracker built progressively over
 the course. This week the app becomes **interactive**: users can add
